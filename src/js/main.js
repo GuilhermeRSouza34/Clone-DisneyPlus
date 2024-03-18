@@ -36,3 +36,8 @@ function ocultaElementosDoHeader() {
     const header = document.querySelector('header');
     header.classList.add('header--is-hidden');
 }
+
+function exibeElementosDoHeader() {
+    const header = document.querySelector('header');
+    header.classList.remove('header--is-hidden');
+}

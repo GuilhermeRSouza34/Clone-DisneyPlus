@@ -41,3 +41,10 @@ function exibeElementosDoHeader() {
     const header = document.querySelector('header');
     header.classList.remove('header--is-hidden');
 }
+
+function abreOuFechaResposta(elemento) {
+    const classe = 'faq__questions__item--is-open';
+    const elementoPai = elemento.target.parentNode;
+
+    elementoPai.classList.toggle(classe);
+}

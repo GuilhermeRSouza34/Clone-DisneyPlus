@@ -18,3 +18,12 @@
             }
         }
     }
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            padding: 0 12px 0 20px;
+        }
+    }

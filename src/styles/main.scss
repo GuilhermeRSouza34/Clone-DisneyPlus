@@ -6,3 +6,38 @@
 @use 'faq';
 @use 'footer';
 @use 'header';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: variaveis.$corTextoSecundario;
+}

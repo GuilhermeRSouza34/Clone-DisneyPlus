@@ -38,3 +38,11 @@
             max-width: 64px;
         }
     }
+    &__links {
+        display: flex;
+
+        &__item {
+            margin: 5px;
+            transition: opacity .5s ease;
+        }
+    }
